@@ -94,7 +94,7 @@
   #stage{
     position:relative;
     width:min(96vw, 177.78vh);
-    height:min(96vh, 54vw);
+    height:min(92vh, 54vw);
     aspect-ratio:16/9;
     background:var(--paper);
     border-radius:14px;
@@ -105,7 +105,7 @@
   .slide{
     position:absolute; inset:0;
     display:flex; flex-direction:column;
-    padding:5.2% 6% 4.6%;
+    padding:5.2% 6% 6.4%;
     opacity:0; visibility:hidden;
     transform:translateY(18px) scale(.99);
     transition:opacity .55s var(--ease), transform .6s var(--ease), visibility .55s;
@@ -121,7 +121,7 @@
   .slide.dark h1, .slide.dark h2, .slide.dark h3{color:#fff;}
 
   .slide-foot{
-    position:absolute; left:6%; right:6%; bottom:3.2%;
+    position:absolute; left:6%; right:6%; bottom:4.4%;
     display:flex; align-items:center; justify-content:space-between;
     font-family:'IBM Plex Mono',monospace;
     font-size:10.5px; letter-spacing:.04em;
@@ -151,8 +151,8 @@
   #nextBtn{right:2%;}
 
   #dots{
-    position:absolute; bottom:1.6%; left:50%; transform:translateX(-50%);
-    display:flex; gap:7px; z-index:40; padding:8px 14px;
+    position:absolute; bottom:0.9%; left:50%; transform:translateX(-50%);
+    display:flex; gap:7px; z-index:40; padding:6px 12px;
     background:rgba(10,24,48,.35); border-radius:20px; backdrop-filter:blur(6px);
   }
   #dots .dot{width:7px; height:7px; border-radius:50%; background:rgba(255,255,255,.35); cursor:pointer; transition:.25s;}
@@ -381,34 +381,34 @@
       </div>
       <h1 style="font-size:clamp(28px,3.4vw,42px); margin-bottom:2.6%;">Our Comprehensive Offerings</h1>
 
-      <div class="g-resp-1 g-offer" style="flex:1; display:grid; grid-template-columns:repeat(6,1fr); grid-template-rows:repeat(2,1fr); gap:16px; min-height:0;">
-        <div class="card offer-card" style="padding:22px; display:flex; flex-direction:column; gap:10px; grid-column:span 2;">
+      <div class="g-resp-1 g-offer" style="flex:1; display:grid; grid-template-columns:repeat(6,1fr); grid-template-rows:repeat(2,minmax(0,1fr)); gap:12px; min-height:0;">
+        <div class="card offer-card" style="padding:18px; display:flex; flex-direction:column; gap:8px; grid-column:span 2; min-height:0;">
           <div class="offer-icon" style="--c:var(--red-600);">♥</div>
           <div style="font-weight:700; font-size:15.5px; color:var(--navy-900);">Life &amp; Health Insurance</div>
-          <div style="font-size:12.8px; color:var(--slate); line-height:1.55;">Comprehensive coverage solutions to protect you and your family, ensuring financial security when it matters most.</div>
+          <div style="font-size:12.3px; color:var(--slate); line-height:1.42;">Comprehensive coverage solutions to protect you and your family, ensuring financial security when it matters most.</div>
         </div>
-        <div class="card offer-card" style="padding:22px; display:flex; flex-direction:column; gap:10px; grid-column:span 2;">
+        <div class="card offer-card" style="padding:18px; display:flex; flex-direction:column; gap:8px; grid-column:span 2; min-height:0;">
           <div class="offer-icon" style="--c:var(--navy-800);">↗</div>
           <div style="font-weight:700; font-size:15.5px; color:var(--navy-900);">Mutual Funds</div>
-          <div style="font-size:12.8px; color:var(--slate); line-height:1.55;">Diversified investment portfolios designed for long-term wealth creation through disciplined, goal-based strategies.</div>
+          <div style="font-size:12.3px; color:var(--slate); line-height:1.42;">Diversified investment portfolios designed for long-term wealth creation through disciplined, goal-based strategies.</div>
         </div>
-        <div class="card offer-card" style="padding:22px; display:flex; flex-direction:column; gap:10px; grid-column:span 2;">
+        <div class="card offer-card" style="padding:18px; display:flex; flex-direction:column; gap:8px; grid-column:span 2; min-height:0;">
           <div class="offer-icon" style="--c:var(--gold);">⚙</div>
           <div style="font-weight:700; font-size:15.5px; color:var(--navy-900);">AIF &amp; PMS</div>
-          <div style="font-size:12.8px; color:var(--slate); line-height:1.55;">Alternative Investment Funds and Portfolio Management Services for sophisticated investors seeking customized strategies.</div>
+          <div style="font-size:12.3px; color:var(--slate); line-height:1.42;">Alternative Investment Funds and Portfolio Management Services for sophisticated investors seeking customized strategies.</div>
         </div>
-        <div class="card offer-card" style="padding:22px; display:flex; flex-direction:column; gap:10px; grid-column:span 3;">
+        <div class="card offer-card" style="padding:18px; display:flex; flex-direction:column; gap:8px; grid-column:span 3; min-height:0;">
           <div class="offer-icon" style="--c:var(--red-600);">▣</div>
           <div style="font-weight:700; font-size:15.5px; color:var(--navy-900);">Fixed Income</div>
-          <div style="font-size:12.8px; color:var(--slate); line-height:1.55;">Stable, predictable returns through carefully selected fixed-income instruments, balancing safety with consistent yield.</div>
+          <div style="font-size:12.3px; color:var(--slate); line-height:1.42;">Stable, predictable returns through carefully selected fixed-income instruments, balancing safety with consistent yield.</div>
         </div>
-        <div class="card offer-card" style="padding:22px; display:flex; flex-direction:column; gap:10px; grid-column:span 3;">
+        <div class="card offer-card" style="padding:18px; display:flex; flex-direction:column; gap:8px; grid-column:span 3; min-height:0;">
           <div class="offer-icon" style="--c:var(--navy-800);">⌂</div>
           <div style="font-weight:700; font-size:15.5px; color:var(--navy-900);">Home Loans</div>
-          <div style="font-size:12.8px; color:var(--slate); line-height:1.55;">Competitive home financing solutions to help you achieve homeownership with favorable terms and expert guidance.</div>
+          <div style="font-size:12.3px; color:var(--slate); line-height:1.42;">Competitive home financing solutions to help you achieve homeownership with favorable terms and expert guidance.</div>
         </div>
       </div>
-      <div style="text-align:center; margin-top:14px; font-family:'Fraunces',serif; font-style:italic; color:var(--navy-800); font-size:14.5px;">
+      <div style="text-align:center; margin-top:8px; font-family:'Fraunces',serif; font-style:italic; color:var(--navy-800); font-size:13.5px;">
         A single, trusted partner across every stage of your financial journey
       </div>
 
@@ -784,7 +784,7 @@
   @keyframes revealUp{to{opacity:1; transform:translateY(0);}}
 
   .offer-card{position:relative;}
-  .offer-icon{width:38px; height:38px; border-radius:10px; background:color-mix(in srgb, var(--c) 12%, white); color:var(--c); display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:700;}
+  .offer-icon{width:32px; height:32px; border-radius:9px; background:color-mix(in srgb, var(--c) 12%, white); color:var(--c); display:flex; align-items:center; justify-content:center; font-size:16px; font-weight:700; flex:none;}
 
   .slider-row{display:flex; flex-direction:column; gap:6px;}
   .slider-row label{display:flex; justify-content:space-between; font-size:12.5px; font-weight:600; color:var(--navy-900);}
